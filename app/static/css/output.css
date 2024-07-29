@@ -553,3 +553,12 @@ video {
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
 }
+
+.static {
+  position: static;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
