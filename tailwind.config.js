@@ -6,7 +6,3 @@ module.exports = {
   },
   plugins: [],
 }
-
-
-
-// ./app/static/css/input.css -o ./app/static/css/output.css
