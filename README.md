@@ -1,4 +1,11 @@
 # sweet_home <br>
+
+<!-- do it first -->
+
+<!-- npm init -y -->
+<!-- npm install -D tailwindcss -->
+<!-- npx tailwindcss init -->
+
 Step 1: python -m pip install virtualenv <br>
 
 <!-- below command is used to create virtual environment dir -->
