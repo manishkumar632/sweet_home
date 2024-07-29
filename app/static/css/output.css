@@ -558,6 +558,8 @@ video {
   position: static;
 }
 
+<<<<<<< HEAD
+=======
 .block {
   display: block;
 }
@@ -650,11 +652,15 @@ video {
   line-height: 1.75rem;
 }
 
+>>>>>>> 53b380084ffeb8fd13f22f68af2fdc79772a8292
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
 }
 
+<<<<<<< HEAD
+.text-blue-700 {
+=======
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -670,6 +676,7 @@ video {
 }
 
 .text-color2 {
+>>>>>>> 53b380084ffeb8fd13f22f68af2fdc79772a8292
   --tw-text-opacity: 1;
   color: rgb(216 230 251 / var(--tw-text-opacity));
 }
