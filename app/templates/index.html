@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -13,3 +14,18 @@
         <h1 class="text-5xl">Hello</h1>
     </body>
 </html>
+=======
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="flex justify-center items-center h-[calc(100vh-96px)]">
+    {% if username %}
+    <p class="text-7xl text-color2">Welcome {{ username }} 🥰</p>
+    {% else %}
+    <p class="text-5xl text-color2">Welcome to My Personal Blog</p>
+    {% endif %}
+</div>
+{% endblock %}
+>>>>>>> 53b380084ffeb8fd13f22f68af2fdc79772a8292
