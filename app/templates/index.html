@@ -1,24 +1,13 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>HOME</title>
-        <link rel="stylesheet" href="{% static 'css/style.css' %}" />
-        <link rel="stylesheet" href="{% static 'css/output.css' %}" />
-        <link rel="stylesheet" href="{% static 'css/input.css' %}" />
-    </head>
-    <body>
-        <h1 class="text-5xl">Hello</h1>
-    </body>
-</html>
 {% extends 'base.html' %}
 
 {% block title %}Home{% endblock %}
 
 {% block content %}
 <div class="flex justify-center items-center h-[calc(100vh-96px)]">
-    <h1>Welcome To My Blog</h1>
+    {% if username %}
+    <p class="text-7xl text-color2">Welcome {{ username }} 🥰</p>
+    {% else %}
+    <p class="text-7xl text-color2">Welcome to My Personal Blog</p>
+    {% endif %}
 </div>
 {% endblock %}
