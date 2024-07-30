@@ -2,9 +2,12 @@
 
 <!-- do it first -->
 
+<!-- npx tailwindcss -i app/static/css/input.css -o app/static/css/output.css --watch -->
+
 <!-- npm init -y -->
 <!-- npm install -D tailwindcss -->
 <!-- npx tailwindcss init -->
+<!-- npx tailwindcss -i app/static/css/input.css -o app/static/css/output.css --watch -->
 
 Step 1: python -m pip install virtualenv <br>
 
