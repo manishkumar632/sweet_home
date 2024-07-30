@@ -3,54 +3,59 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
-    <nav class="bg-black shadow-lg">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="flex justify-between">
-                <div class="flex space-x-4">
-                    <!-- Logo -->
-                    <div>
-                        <a href="{% url 'home' %}" class="flex items-center py-5 px-2 text-gray-700">
-                            <svg class="h-6 w-6 mr-1 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3v6h6V3H3zM9 9v12h6V9H9zm6 0V3h6v6h-6zM3 15h6v6H3v-6z" />
-                            </svg>
-                            <span class="font-bold">SweetHome</span>
-                        </a>
-                    </div>
-
-                    <!-- Primary Nav -->
-                    <div class="hidden md:flex items-center space-x-1">
-                        <a href="{% url 'home' %}" class="py-5 px-3 text-gray-700 hover:text-gray-900">Home</a>
-                        <a href="{% url 'about' %}" class="py-5 px-3 text-gray-700 hover:text-gray-900">About</a>
-                        <a href="{% url 'services' %}" class="py-5 px-3 text-gray-700 hover:text-gray-900">Services</a>
-                        <a href="{% url 'contact' %}" class="py-5 px-3 text-gray-700 hover:text-gray-900">Contact</a>
-                    </div>
-                </div>
-
-                <!-- Secondary Nav -->
-                <div class="hidden md:flex items-center space-x-1">
-                    <a href="{% url 'login' %}" class="py-5 px-3">Login</a>
-                    <a href="{% url 'signup' %}" class="py-2 px-3 bg-blue-500 text-white rounded hover:bg-blue-400">Signup</a>
-                </div>
-
-                <!-- Mobile menu button -->
-                <div class="md:hidden flex items-center">
-                    <button class="mobile-menu-button">
-                        <svg class="h-6 w-6 text-gray-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+<nav class="bg-black shadow-lg">
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between">
+            <div class="flex space-x-4">
+                <!-- Logo -->
+                <div>
+                    <a href="{% url 'home' %}" class="flex items-center py-5 px-2 text-gray-700">
+                        <svg class="h-6 w-6 mr-1 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 3v6h6V3H3zM9 9v12h6V9H9zm6 0V3h6v6h-6zM3 15h6v6H3v-6z" />
                         </svg>
-                    </button>
+                        <span class="font-bold">SweetHome</span>
+                    </a>
+                </div>
+
+                <!-- Primary Nav -->
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="{% url 'home' %}" class="py-5 px-3 text-gray-700 hover:text-gray-900">Home</a>
+                    <a href="{% url 'about' %}" class="py-5 px-3 text-gray-700 hover:text-gray-900">About</a>
+                    <a href="{% url 'services' %}" class="py-5 px-3 text-gray-700 hover:text-gray-900">Services</a>
+                    <a href="{% url 'contact' %}" class="py-5 px-3 text-gray-700 hover:text-gray-900">Contact</a>
                 </div>
             </div>
-        </div>
 
-        <!-- Mobile menu -->
-        <div class="mobile-menu hidden md:hidden">
-            <a href="{% url 'home' %}" class="block py-2 px-4 text-sm hover:bg-gray-200">Home</a>
-            <a href="{% url 'about' %}" class="block py-2 px-4 text-sm hover:bg-gray-200">About</a>
-            <a href="{% url 'services' %}" class="block py-2 px-4 text-sm hover:bg-gray-200">Services</a>
-            <a href="{% url 'contact' %}" class="block py-2 px-4 text-sm hover:bg-gray-200">Contact</a>
-            <a href="{% url 'login' %}" class="block py-2 px-4 text-sm hover:bg-gray-200">Login</a>
-            <a href="{% url 'signup' %}" class="block py-2 px-4 text-sm hover:bg-gray-200">Signup</a>
+            <!-- Secondary Nav -->
+            <div class="hidden md:flex items-center space-x-1">
+                <a href="{% url 'login' %}" class="py-5 px-3">Login</a>
+                <a href="{% url 'signup' %}"
+                    class="py-2 px-3 bg-blue-500 text-white rounded hover:bg-blue-400">Signup</a>
+            </div>
+
+            <!-- Mobile menu button -->
+            <div class="md:hidden flex items-center">
+                <button class="mobile-menu-button">
+                    <svg class="h-6 w-6 text-gray-700" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
         </div>
-    </nav>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu hidden md:hidden">
+        <a href="{% url 'home' %}" class="block py-2 px-4 text-sm hover:bg-gray-200">Home</a>
+        <a href="{% url 'about' %}" class="block py-2 px-4 text-sm hover:bg-gray-200">About</a>
+        <a href="{% url 'services' %}" class="block py-2 px-4 text-sm hover:bg-gray-200">Services</a>
+        <a href="{% url 'contact' %}" class="block py-2 px-4 text-sm hover:bg-gray-200">Contact</a>
+        <a href="{% url 'login' %}" class="block py-2 px-4 text-sm hover:bg-gray-200">Login</a>
+        <a href="{% url 'signup' %}" class="block py-2 px-4 text-sm hover:bg-gray-200">Signup</a>
+    </div>
+</nav>
 {% endblock %}
